@@ -11339,3 +11339,18 @@ section.resume-section .resume-section-content {
 .fa-cloud-download-alt {
   margin-left: 5px;
 }
+
+#collaboration {
+  background-color: #c4c4c4;
+}
+
+.collab-text {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.collab-email {
+  font-size: 25px;
+  font-weight: 600;
+}
