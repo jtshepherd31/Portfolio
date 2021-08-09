@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', event => {
     cards.forEach(card => {
         card.addEventListener('mouseover', function() {
             const cardScreen = card.getElementsByClassName('card-screen');
-            cardScreen[0].style.opacity = .85;
+            
             const cardTitle = card.getElementsByClassName('card-title');
             cardTitle[0].style.visibility = 'hidden';
             const cardContent = card.getElementsByClassName('card-content');
@@ -24,9 +24,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
         })
 
-        card.addEventListener('mouseout', function() {     
-            const cardScreen = card.getElementsByClassName('card-screen');
-            cardScreen[0].style.opacity = .5;       
+        card.addEventListener('mouseout', function() {            
             const cardTitle = card.getElementsByClassName('card-title');
             cardTitle[0].style.visibility = 'visible';
             const cardContent = card.getElementsByClassName('card-content');

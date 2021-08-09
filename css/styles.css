@@ -11003,6 +11003,7 @@ section.resume-section .resume-section-content {
 #skills {
   background-color: #c4c4c4;
   width: 100%;
+  max-width: inherit;
 }
 
 #lang-animate {
@@ -11099,9 +11100,6 @@ section.resume-section .resume-section-content {
   color: #309df0;
 }
 
-.solution_card .so_top_icon {
-}
-
 .solution_card .solu_title h3 {
   color: #212121;
   font-size: 1.3rem;
@@ -11133,8 +11131,6 @@ section.resume-section .resume-section-content {
   text-transform: capitalize;
   margin-bottom: 1rem;
   font-size: 2.5rem;
-}
-.our_solution_content p {
 }
 
 .hover_color_bubble {
@@ -11340,10 +11336,6 @@ section.resume-section .resume-section-content {
   margin-left: 5px;
 }
 
-#collaboration {
-  background-color: #c4c4c4;
-}
-
 .collab-text {
   color: white;
   font-size: 25px;
@@ -11353,4 +11345,163 @@ section.resume-section .resume-section-content {
 .collab-email {
   font-size: 25px;
   font-weight: 600;
+}
+
+#contact-me {
+  max-width: inherit;
+  background-color: #c4c4c4;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 125px;
+	height: 125px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.icon-card-subtitle {
+  color: white !important;
+  vertical-align: center;
+  text-align: center;
+}
+
+/* Welcome */
+/* .welcome-title {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#wrapper {
+  background: linear-gradient(-45deg, #00AAFF, #00AAFF, #00AAFF, #fff, #00AAFF, #fff);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+} */
+
+/* New Style fade in */
+.fade-in {
+  animation: fadeIn ease 5s;
+  -webkit-animation: fadeIn ease 5s;
+  -moz-animation: fadeIn ease 5s;
+  -o-animation: fadeIn ease 5s;
+  -ms-animation: fadeIn ease 5s;
+}
+
+
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+/* The style below is just for the appearance of the example div */
+
+.style {
+  width:90vw; height:90vh;
+  text-align:center;
+  padding-top:calc(50vh - 50px);
+  margin-left:5vw;
+  border:4px double #F00;
+  background-color:#000;
+  display: absolute;
+  width: 100%;
+}
+.style p {
+  color:#fff;
+  font-size:50px;
 }
