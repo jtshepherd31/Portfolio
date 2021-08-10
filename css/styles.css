@@ -11225,27 +11225,27 @@ section.resume-section .resume-section-content {
 }
 
 #snake-img {
-  background-image: url(/assets/img/snake.png);
+  background-image: url(assets/img/snake.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #recipe-img {
-  background-image: url(/assets/img/recipe.png);
+  background-image: url(assets/img/recipe.png);
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 
 #tic-tac-img {
-  background-image: url(/assets/img/tictac.png);
+  background-image: url(assets/img/tictac.png);
   background-repeat: no-repeat;
   background-size: cover;
 
 }
 
 #blog-img {
-  background-image: url(/assets/img/blog.png);
+  background-image: url(assets/img/blog.png);
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -11416,7 +11416,7 @@ section.resume-section .resume-section-content {
 }
 
 #about {
-  background-image: url('/assets/img/denver.png');
+  background-image: url('assets/img/denver.png');
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: 100% 30%;
